@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1 style="text-align:center">Checkout</h1>
+
+<div class="checkout">
+  <input placeholder="Full Name">
+  <input placeholder="Address">
+  <select>
+    <option>Cash on Delivery</option>
+    <option>Card</option>
+    <option>Vodafone Cash</option>
+  </select>
+
+  <button onclick="placeOrder()">Place Order</button>
+</div>
+
+<script>
+function placeOrder(){
+  localStorage.removeItem("cart");
+  alert("Order Placed Successfully!");
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
